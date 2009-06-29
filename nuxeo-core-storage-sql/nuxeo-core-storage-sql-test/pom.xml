@@ -81,6 +81,7 @@
     <dependency>
       <groupId>javax.resource</groupId>
       <artifactId>connector-api</artifactId>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
