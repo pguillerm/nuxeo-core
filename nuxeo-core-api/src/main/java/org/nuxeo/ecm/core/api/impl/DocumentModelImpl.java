@@ -79,7 +79,7 @@ import org.nuxeo.runtime.api.Framework;
  */
 @SuppressWarnings({ "SuppressionAnnotation" })
 public class DocumentModelImpl implements DocumentModel, Cloneable {
-
+    
     public static final long F_STORED = 1L;
 
     public static final long F_DETACHED = 2L;
