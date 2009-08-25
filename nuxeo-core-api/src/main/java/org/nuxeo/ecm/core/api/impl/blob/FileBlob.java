@@ -31,6 +31,7 @@ import java.io.OutputStream;
 import java.io.Serializable;
 
 import org.nuxeo.ecm.core.api.Blob;
+import org.nuxeo.runtime.api.Framework;
 
 /**
  * @author  <a href="mailto:bs@nuxeo.com">Bogdan Stefanescu</a>
@@ -75,6 +76,7 @@ public class FileBlob extends DefaultStreamBlob implements Serializable {
         OutputStream out = null;
         try {
             file = File.createTempFile("NXCore-FileBlob-", ".tmp");
+            Framework.trackFile(file, this);
             file.deleteOnExit();
             out = new FileOutputStream(file);
             copy(in, out);
