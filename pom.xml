@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.nuxeo</groupId>
     <artifactId>nuxeo-ecm</artifactId>
-    <version>5.2-20081231</version>
+    <version>5.2-20081231-NXP-3779</version>
   </parent>
 
   <groupId>org.nuxeo.ecm.core</groupId>
@@ -65,11 +65,6 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.nuxeo.runtime</groupId>
-        <artifactId>nuxeo-runtime</artifactId>
-        <version>${nuxeo.runtime.version.patch-NXP-3779}</version>
-      </dependency>
-      <dependency>
         <groupId>org.nuxeo.common</groupId>
         <artifactId>nuxeo-common</artifactId>
         <version>${nuxeo.common.version}</version>
@@ -127,7 +122,7 @@
       <dependency>
         <groupId>org.nuxeo.runtime</groupId>
         <artifactId>nuxeo-runtime</artifactId>
-        <version>${nuxeo.runtime.version}</version>
+        <version>${nuxeo.runtime.version.patch-NXP-3779}</version>
       </dependency>
       <dependency>
         <groupId>org.nuxeo.runtime</groupId>
