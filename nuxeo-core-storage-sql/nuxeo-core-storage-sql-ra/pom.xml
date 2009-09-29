@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -49,6 +50,21 @@
     <dependency>
       <groupId>javax.ressource</groupId>
       <artifactId>jca-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>osgi-core</artifactId>
       <scope>provided</scope>
     </dependency>
 
@@ -168,8 +184,10 @@
         <configuration>
           <!-- This is so that java.net.URL can load the handler for JBoss's vfs -->
           <useSystemClassLoader>true</useSystemClassLoader>
-          <!-- Surefire 2.4.3: don't keep the single bootstrap jar on the classpath
-               otherwise NXRuntimeTestCase bundle lookup fails -->
+          <!--
+            Surefire 2.4.3: don't keep the single bootstrap jar on the classpath
+            otherwise NXRuntimeTestCase bundle lookup fails
+          -->
           <useManifestOnlyJar>false</useManifestOnlyJar>
           <systemProperties>
             <!-- This is because JBoss 5 doesn't use classloaders correctly -->
@@ -180,9 +198,11 @@
             </property>
           </systemProperties>
           <excludes>
-            <!-- Exclude all tests for now, JBoss has problems with
-                 directories with spaces in them, and maven sometimes
-                 fails to run the tests at all -->
+            <!--
+              Exclude all tests for now, JBoss has problems with directories
+              with spaces in them, and maven sometimes fails to run the tests at
+              all
+            -->
             <exclude>**/*.java</exclude>
           </excludes>
         </configuration>

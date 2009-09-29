@@ -77,11 +77,16 @@
     </dependency>
 
     <!-- TODO: Use the dep from the central repo -->
+<!--    <dependency>-->
+<!--      <groupId>javax.ressource</groupId>-->
+<!--      <artifactId>jca-api</artifactId>-->
+<!--      <version>1.5</version>-->
+<!--      <scope>compile</scope>-->
+<!--    </dependency>-->
     <dependency>
-      <groupId>javax.ressource</groupId>
-      <artifactId>jca-api</artifactId>
-      <version>1.5</version>
-      <scope>compile</scope>
+      <groupId>javax.resource</groupId>
+      <artifactId>connector-api</artifactId>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
