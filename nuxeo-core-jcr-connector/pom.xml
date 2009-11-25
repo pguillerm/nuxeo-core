@@ -7,6 +7,7 @@
     <version>1.5-20081231</version>
   </parent>
 
+  <version>1.5-20081231-SUPNXP-1601</version>
   <artifactId>nuxeo-core-jcr-connector</artifactId>
   <name>Nuxeo Core JCR Connector</name>
   <description>Nuxeo Core: JCR Connector.</description>
