@@ -7,6 +7,7 @@
     <version>1.5-20081231</version>
   </parent>
 
+  <version>1.5-20081231-SUPNXP-1601</version>
   <artifactId>nuxeo-core-schema</artifactId>
   <name>Nuxeo Core Schema</name>
   <description>Nuxeo Core: Schema.</description>
